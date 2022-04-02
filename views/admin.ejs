@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <form class = 'formular' action='/intrebari-lista' method='POST'>
+        <label for="intrebare">Intrebare:</label><br>
+        <input type="text" id="intrebare" name="intrebare"><br>
+        <label for="raspuns1">Raspunsul 1:</label><br>
+        <input type="text" id="raspuns1" name="raspuns1">
+        <input type = "checkbox" id = "raspunsCorect1" name = "raspunsCorect1" value = "1"><br>
+        <label for="raspuns2">Raspunsul 2:</label><br>
+        <input type="text" id="raspuns2" name="raspuns2">
+        <input type = "checkbox" id = "raspunsCorect2" name = "raspunsCorect2" value = "1"><br>
+        <label for="raspuns3">Raspunsul 3:</label><br>
+        <input type="text" id="raspuns3" name="raspuns3">
+        <input type = "checkbox" id = "raspunsCorect3" name = "raspunsCorect3" value = "1"><br>
+        <label for="raspuns4">Raspunsul 4:</label><br>
+        <input type="text" id="raspuns4" name="raspuns4">
+        <input type = "checkbox" id = "raspunsCorect4" name = "raspunsCorect4" value = "1"><br>
+        <input type="submit" value="Submit">
+      </form><br>
+      <input type = "text" id = "intrebareSterge" name = "intrebareSterge"><input type = "submit" value = "Submit" id ='butonStergere'>
+      <label for = "intrebareSterge">intrebare de sters</label>
+    <script>
+      const butonStergere = document.getElementById('butonStergere');
+      let textStergere = document.getElementById('intrebareSterge')
+      butonStergere.addEventListener('click',()=>{
+        alert(textStergere.value);
+      })
+    </script>
+</body>
+</html>
