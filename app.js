@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const Post = require('./models/post');
+const Post = require('./models/intrebareSchema');
 const PORT = 3000;
 const cors = require('cors');
-const { db } = require('./models/post');
+const { db } = require('./models/intrebareSchema');
 require('dotenv').config();
 
 mongoose.connect(process.env.DBURL,{useNewUrlParser: true, useUnifiedTopology: true}).then((result)=>{console.log('Este conectat!')}).catch((err)=>{console.log(err)});
